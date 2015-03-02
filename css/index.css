@@ -1,88 +1,126 @@
-/**
- * Demo page styles, all list scroll effects styles are in sctroll.css
- */
-html, body {
-	margin: 0px;
-	padding: 0px;
-}
 
 body {
-	background: #323232;
-	font-family: 'Lato', Times, 'Times New Roman', serif;
-	font-size: 16px;
-	color: #eee;
-	margin-bottom: 40px;
-	line-height: 1;
-}
-
-header {
-	background: rgba(0, 0, 0, 0.2);
-	margin-bottom: 30px;
-	padding: 20px 100px 20px 20px;
-	font-size: 20px;
-	line-height: 1.3em;
-}
-
-header div {
-	margin-top: 10px;
-}
-
-a {
-	color: cyan;
-}
-
-article {
-	display: inline-block;
-	margin: 20px;
-}
-
-h2 {
-	font-size: 16px;
-	margin-bottom: 20px;
-	text-transform: uppercase;
-}
-
-small {
-	opacity: 0.6;
-	font-style: italic;
-	font-size: 14px;
-	margin-left: 5px;
-}
-
-/**
- * List used for the demo page
- */
+		color: #eee;
+		padding: 0px;
+		font-family:  'Source Han Sans TC', 'Open Sans Han TWHK', Roboto,
+        'Noto Sans CJK TC', 'Noto Sans T Chinese', 'Source Han Sans TC',
+        '黑體-繁', 'Heiti TC', '蘋果儷中黑', 'Apple LiGothic Medium',
+        '微軟雅黑', 'Microsoft YaHei ', '微軟正黑體', 'Microsoft JhengHei',
+        '文泉驛微米黑', 'WenQuanYi Micro Hei', '文泉驛正黑',
+        'Droid Sans', 'Droid Sans Fallback',
+        sans-serif;		
+        background: #fff6ea;
+        font-weight: 300;
+	}
+	#wrapper {
+		background-color: #ffe7c1;
+		padding: 0; 
+		height:auto;
+		position: relative;
+		left: 50%;
+		margin-left: -420px;
+		width: 840px;
+	}
+	.bannerBlock {
+		position: relative;
+	}
+	.blockContent {
+		position: relative;
+		overflow: hidden;
+		padding-left: 48px;
+		padding-right: 48px;
+		padding-bottom: 32px;
+		padding-top: 18px;
+		width:calc(100%-96px);
+	}
+	.blockTitle {
+		font-size: 26px;		
+		color: #fff;
+	}
+	.slashBlock {
+		display: inline-block;
+		vertical-align: bottom;
+		background-color: rgb(186,83,71);
+		height: 32px; width: 8px;
+		margin-bottom: 7px;
+		transform: skew(-12deg);
+	}
+	.slashTitle {
+		color:  rgb(196,93,81);
+		font-size: 24px;
+		font-weight: bolder;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.blockTitleContent {
+		position:absolute;
+		bottom: 2px;
+		padding-left:40px;
+	}
+	.footerTitleContent {
+		padding-top: 20px;
+		padding-left:40px;
+	}
+	.blockSmallTitle {
+		position: relative;
+		font-size: 24px;
+		color:  rgba(255, 255, 255);
+		font-weight: 500
+	}
+	.blockFonts {
+		width: auto;
+		font-size: 24px;
+		color: 252525;
+	}
+	.peopleContentWrapper {
+		position: relative;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		clear: both;
+	}
 ul {
 	position: relative;
-	width: 230px;
+	width: auto;
 	height: 480px;
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	list-style: none;
-
 	-webkit-perspective: 400px;
 	   -moz-perspective: 400px;
 	    -ms-perspective: 400px;
 	     -o-perspective: 400px;
 	        perspective: 400px;
+	        text-align: center;
 }
 	ul li {
 		position: relative;
-		padding: 16px;
-		background: #eee;
-		color: #252525;
-		font-size: 18px;
+		background: #ffa300;
 		z-index: 2;
-
 		-webkit-transform: translateZ(0px);
 		   -moz-transform: translateZ(0px);
 		    -ms-transform: translateZ(0px);
 		     -o-transform: translateZ(0px);
 		        transform: translateZ(0px);
+		        text-align: center;
 	}
+
+	ul footer {
+		position: relative;
+		background: #ffa300;
+		z-index: 2;
+		padding: 22px;
+		-webkit-transform: translateZ(0px);
+		   -moz-transform: translateZ(0px);
+		    -ms-transform: translateZ(0px);
+		     -o-transform: translateZ(0px);
+		        transform: translateZ(0px);
+		        text-align: left;
+		        height: 100px;
+		        
+}
 	ul li:nth-child(odd) {
-		background: #fff;
+		background: #ffe7c1;
 	}
 
