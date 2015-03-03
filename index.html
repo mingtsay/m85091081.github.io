@@ -17,6 +17,15 @@
 				<ul class="helix">
 					<li><img src="nnc.png" style="width:50%;height:auto"></li>
 					<li>
+						<span class="blockTitle">Youtube PlayList</span>
+					</li>
+					<li>
+						
+						<div id="ytplayer"></div>
+  						
+					</li>
+
+					<li>
 						<span class="blockTitle">關於我們</span>
 					</li>
 					<li>
@@ -62,12 +71,22 @@
 				</li>
 			<footer>
 				Copyright © NNC 版權所有<br>
-				<a href="mailto:contact@sitcon.org">contact@nnc.tw</a>
+				<a href="mailto:@nnc.org">contact@nnc.tw</a>
 			</footer>
 		</ul>
 	</article>
 </div>
-	<script src="js/stroll.min.js"></script>
+	<script src="js/stroll.js"></script>
+	<script src="js/youtube.js"></script>
+	<script>
+	$('body').bind('mousewheel', function(e) { // on scroll
+    var $ul = $('#main ul');
+    // set div scroll top offset to current + extra from this scroll
+    $ul.scrollTop($ul.scrollTop() 
+                    - e.originalEvent.wheelDelta);
+    return false; // prevent body scrolling
+});
+</script>
 		<script>
 			stroll.bind( '#main ul' );
 		</script>

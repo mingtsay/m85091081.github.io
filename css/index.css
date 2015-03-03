@@ -9,24 +9,25 @@ body {
         '文泉驛微米黑', 'WenQuanYi Micro Hei', '文泉驛正黑',
         'Droid Sans', 'Droid Sans Fallback',
         sans-serif;		
-        background: #fff6ea;
+        background: #ffd79b;
         font-weight: 300;
-	}
+  	}
 	#wrapper {
 		background-color: #ffe7c1;
 		padding: 0; 
-		height:auto;
+		height:100%;
 		position: relative;
 		left: 50%;
-		margin-left: -420px;
-		width: 840px;
+		margin-left: -480px;
+		width: 960px;
+		overflow: auto;
 	}
 	.bannerBlock {
 		position: relative;
 	}
 	.blockContent {
 		position: relative;
-		overflow: hidden;
+		overflow: auto;
 		padding-left: 48px;
 		padding-right: 48px;
 		padding-bottom: 32px;
@@ -80,7 +81,7 @@ body {
 	}
 ul {
 	position: relative;
-	width: auto;
+	width: 960px;
 	height:100%;
 	margin: 0;
 	padding: 0;
