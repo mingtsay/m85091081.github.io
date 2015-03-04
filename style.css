@@ -1,0 +1,83 @@
+body {
+    margin: 8px 0 0;
+    background: #ffd79b;
+}
+
+#outer {
+    background: #ffe7c1;
+    width: 960px;
+    overflow: hidden;
+}
+
+#top {
+    color: #fff;
+    background: #ffa300;
+    text-align: right;
+    padding: 2px 5px 3px;
+}
+
+#top a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#top a:hover {
+    color: #cff;
+}
+
+#banner a {
+    display: block;
+    margin: 0 auto;
+}
+
+#banner a, #banner img {
+    width: 330px;
+}
+
+#main {
+    text-align: center;
+}
+
+#main ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#main ul .title {
+    font-size: 28px;
+    color: #fff;
+    background: #ffa300;
+}
+
+#main ul .content {
+    margin: 0 48px;
+    padding: 18px 48px 32px;
+    font-size: 22px;
+    color: #252525;
+}
+
+#main ul .content.youtube {
+    padding: 0;
+}
+
+#footer {
+    padding: 22px;
+    padding-bottom: 32px;
+    color: #fff;
+    background: #ffa300;
+}
+
+@media screen and (max-width: 960px) {
+    #outer {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 961px) {
+    #outer {
+        position: absolute;
+        left: 50%;
+        margin-left: -480px;
+    }
+}
